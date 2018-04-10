@@ -7,19 +7,82 @@
 <body>
 
   <form name="contact" method="POST" netlify>
-    <p>
-      <label>Your Name: <input type="text" name="name"></label>
-    </p>
-    <p>
-      <label>Your Email: <input type="email" name="email"></label>
-    </p>
-    <p>
-      <label>Message: <textarea name="message"></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
+
+    <div class="inputCol"><div class="labelName">Your Name: </div><input type="text" name="name" required></div>
+    <br />
+
+    <div class="inputCol"><div class="labelName">Your Email: </div><input type="email" name="email" required></div>
+    <br />
+
+    <div class="inputCol"><div class="labelName" id="labelNameMessage">Message: </div><textarea name="message" required id="textAreaMessage"></textarea></div>
+    <br />
+
+    <div class="inputCol">
+      <div class="labelName">Customer Type:</div>
+      <input type="radio" name="public" value="male">Public
+      <input type="radio" name="trade" value="male">Trade<br>
+    </div>
+    <br />
+
+    <!--   <div class="inputCol">
+         <div class="labelName">Hauliers - trailer types available:</div>
+         <select name="trailerType" size="4" multiple>
+           <option value="flatbed">Flatbed</option>
+           <option value="curtainSide">Curtain side</option>
+         </select>
+       </div>-->
+
+    <div class="inputCol">
+
+      <div class="labelName">Hauliers - <br/>trailer types available:</div>
+
+      <input type="checkbox" checked="checked">Curtain side
+      <span class="checkmark"></span>
+
+      <input type="checkbox" checked="checked">Flatbed
+      <span class="checkmark"></span>
+
+    </div>
+
+    <br />
+
+    <button type="submit">Send</button>
+
   </form>
+
+
+  <style>
+    form {
+      font-family: Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .inputCol {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .labelName {
+      display: inline-block;
+      width: 120px;
+      padding: 10px;
+    }
+
+    #labelNameMessage {
+      vertical-align: top;
+    }
+
+    #textAreaMessage {
+      width: 80%;
+      height: 160px;
+    }
+  </style>
+
 
 </body>
 </html>
