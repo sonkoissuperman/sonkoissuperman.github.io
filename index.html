@@ -11,9 +11,10 @@
     <br />
 
     <div class="inputCol">
-      <div class="labelName">Customer Type:</div>
-      <input type="radio" name="public" value="public">Public
-      <input type="radio" name="trade" value="trade">Trade
+      <div class="inputGroupHeading">Customers</div>
+      <div class="labelName">Type:</div>
+      <input type="radio" name="public" value="yes">Public
+      <input type="radio" name="trade" value="yes">Trade
     </div>
     <br />
 
@@ -27,12 +28,14 @@
 
     <div class="inputCol">
 
-      <div class="labelName">Hauliers - <br/>trailer types available:</div>
+      <div class="inputGroupHeading">Hauliers</div>
 
-      <input type="checkbox" name="curainSide" value="curtain-side">Curtain side
+      <div class="labelName">Trailer types available:</div>
+
+      <input type="checkbox" name="curtain-side" value="yes">Curtain side
       <span class="checkmark"></span>
 
-      <input type="checkbox" name="flatbed" value="flatbed">Flatbed
+      <input type="checkbox" name="flatbed" value="yes">Flatbed
       <span class="checkmark"></span>
 
     </div>
@@ -57,7 +60,7 @@
     .inputCol {
       display: inline-block;
       width: 100%;
-         padding-top: 10px;
+      padding-top: 10px;
       padding-bottom: 10px;
     }
 
@@ -75,5 +78,12 @@
       width: 80%;
       height: 160px;
     }
-  </style>
 
+    .inputGroupHeading {
+      width: 30%;
+      border-bottom: 1px solid #dae0ea;
+      padding: 10px;
+      font-size: 20px;
+      color: #3b5998;
+    }
+  </style>
