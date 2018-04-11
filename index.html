@@ -1,4 +1,5 @@
 
+ 
   <form name="contact" method="POST" netlify>
 
     <div class="inputCol"><div class="labelName">Your Name: </div><input type="text" name="name" required></div>
@@ -18,14 +19,6 @@
     </div>
     <br />
 
-    <!--   <div class="inputCol">
-         <div class="labelName">Hauliers - trailer types available:</div>
-         <select name="trailerType" size="4" multiple>
-           <option value="flatbed">Flatbed</option>
-           <option value="curtainSide">Curtain side</option>
-         </select>
-       </div>-->
-
     <div class="inputCol">
 
       <div class="inputGroupHeading">Hauliers</div>
@@ -42,7 +35,7 @@
 
     <br />
 
-    <button type="submit">Send</button>
+    <button type="submit" id="sendButton">Send</button>
 
   </form>
 
@@ -74,6 +67,10 @@
       vertical-align: top;
     }
 
+    form input[type=text] {
+      width: 200px;
+    }
+
     #textAreaMessage {
       width: 80%;
       height: 160px;
@@ -85,5 +82,15 @@
       padding: 10px;
       font-size: 20px;
       color: #3b5998;
+    }
+
+    #sendButton {
+      line-height: 37px;
+      padding: 5px 15px 5px 15px ;
+      margin: 10px;
+      font-size: 20px;
+      color: white;
+      background-color: forestgreen;
+      border: none;
     }
   </style>
