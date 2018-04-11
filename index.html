@@ -19,8 +19,8 @@
 
     <div class="inputCol">
       <div class="labelName">Customer Type:</div>
-      <input type="radio" name="public" value="male">Public
-      <input type="radio" name="trade" value="male">Trade<br>
+      <input type="radio" name="public" value="public">Public
+      <input type="radio" name="trade" value="trade">Trade
     </div>
     <br />
 
@@ -36,10 +36,10 @@
 
       <div class="labelName">Hauliers - <br/>trailer types available:</div>
 
-      <input type="checkbox" checked="checked">Curtain side
+      <input type="checkbox" name="curainSide" value="curtain-side">Curtain side
       <span class="checkmark"></span>
 
-      <input type="checkbox" checked="checked">Flatbed
+      <input type="checkbox" name="flatbed" value="flatbed">Flatbed
       <span class="checkmark"></span>
 
     </div>
@@ -69,7 +69,7 @@
 
     .labelName {
       display: inline-block;
-      width: 120px;
+      width: 100px;
       padding: 10px;
     }
 
