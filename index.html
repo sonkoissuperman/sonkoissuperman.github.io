@@ -1,17 +1,35 @@
 
- 
+  <div class="formHeader">
+    Contact Us
+  </div>
+
   <form name="contact" method="POST" netlify>
 
-    <div class="inputCol"><div class="labelName">Your Name: </div><input type="text" name="name" required></div>
-    <br />
 
-    <div class="inputCol"><div class="labelName">Your Email: </div><input type="email" name="email" required></div>
-    <br />
 
-    <div class="inputCol"><div class="labelName" id="labelNameMessage">Message: </div><textarea name="message" required id="textAreaMessage"></textarea></div>
-    <br />
+    <div class="inputGroup">
+      <div class="labelName">Your Name: </div>
+      <input type="text" name="name" required>
+    </div>
 
-    <div class="inputCol">
+    <div class="inputGroup">
+      <div class="labelName">Your Email: </div>
+      <input type="email" name="email" required>
+    </div>
+
+    <div class="inputGroup">
+      <div class="labelName">Your Company: </div>
+      <input type="text" name="company">
+    </div>
+
+
+    <div class="inputGroup">
+      <div class="labelName" id="labelNameMessage">Message: </div>
+      <textarea name="message" required id="textAreaMessage"></textarea>
+    </div>
+
+
+    <div class="inputGroup">
       <div class="inputGroupHeading">Customers</div>
       <div class="labelName">Type:</div>
       <input type="radio" name="public" value="yes">Public
@@ -19,11 +37,12 @@
     </div>
     <br />
 
-    <div class="inputCol">
+    <div class="inputGroupHeading">Hauliers</div>
 
-      <div class="inputGroupHeading">Hauliers</div>
+    <div class="inputGroup">
 
-      <div class="labelName">Trailer types available:</div>
+
+      <div class="labelName inline-block">Trailer types available:</div>
 
       <input type="checkbox" name="curtain-side" value="yes">Curtain side
       <span class="checkmark"></span>
@@ -48,9 +67,14 @@
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+      padding: 25px;
     }
 
-    .inputCol {
+    .inline-block {
+      display: inline-block;
+    }
+
+    .inputGroup {
       display: inline-block;
       width: 100%;
       padding-top: 10px;
@@ -58,17 +82,18 @@
     }
 
     .labelName {
-      display: inline-block;
-      width: 100px;
-      padding: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
 
     #labelNameMessage {
       vertical-align: top;
     }
 
-    form input[type=text] {
-      width: 200px;
+    form input[type=text], input[type=email] {
+      width: 300px;
+      line-height: 25px;
+      font-size: 16px;
     }
 
     #textAreaMessage {
@@ -79,18 +104,30 @@
     .inputGroupHeading {
       width: 30%;
       border-bottom: 1px solid #dae0ea;
-      padding: 10px;
+      padding-bottom: 10px;
+      padding-top: 10px;
       font-size: 20px;
       color: #3b5998;
     }
 
-    #sendButton {
+    #sendButton, .formHeader {
       line-height: 37px;
-      padding: 5px 15px 5px 15px ;
-      margin: 10px;
+      padding: 5px 15px 5px 15px;
+      margin-top: 20px;
       font-size: 20px;
       color: white;
       background-color: forestgreen;
       border: none;
+    }
+
+    .formHeader {
+      width: 85%;
+      font-family: Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    input[type=checkbox] {
+     
     }
   </style>
