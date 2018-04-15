@@ -1,5 +1,4 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -7,9 +6,9 @@
 </head>
 <body>
 
-  <div class="formHeader">
+ <!--<div class="formHeader">
     Contact Us
-  </div>
+  </div>-->
 
   <form name="contact" method="POST" netlify>
 
@@ -68,6 +67,16 @@
 
 
   <style>
+
+    input {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    #form-name{
+      width:100%;
+    }
     form {
       font-family: Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
       cursor: pointer;
@@ -83,7 +92,7 @@
 
     .inputGroup {
       display: inline-block;
-      width: 90%;
+      width: 100%;
       padding-top: 10px;
       padding-bottom: 10px;
     }
@@ -98,13 +107,13 @@
     }
 
     form input[type=text], input[type=email] {
-      width: 90%;
+      width: 100%;
       line-height: 25px;
       font-size: 16px;
     }
 
     #textAreaMessage {
-      width: 90%;
+      width: 100%;
       height: 160px;
     }
 
@@ -128,6 +137,12 @@
       text-align: center;
     }
 
+    .formHeader {
+      width: 100%;
+      font-family: Gadugi, 'Gill Sans MT', Geneva, Tahoma, sans-serif;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
 
     input[type=checkbox] {
      
@@ -150,4 +165,3 @@ document.write("<a href='mailto:"+TufsnpihYKHViJmWfciDzTKTanNHt+""+fojGD+""+xQi+
 
 </body>
 </html>
-
